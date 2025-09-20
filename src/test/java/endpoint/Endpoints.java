@@ -8,7 +8,7 @@ public class Endpoints {
 
 	public static final String GET_ALL_PRODUCTS = "/products";
 	public static final String GET_PRODUCT_BY_ID = "/products/{id}";
-	public static final String GET_PRODUCTS_WIH_LIMIT = "/products?limit=x";
+	public static final String GET_PRODUCTS_WIH_LIMIT = "/products?limit={limit}";
 	public static final String GET_PRODUCTS_SORTED = "/products?sort={order}";
 	public static final String GET_PRODUCTS_BY_CATEGORY = "/products/{category}";
 	public static final String GET_PRODUCTS_ALL_CATEGORIES = "/products/categories";
