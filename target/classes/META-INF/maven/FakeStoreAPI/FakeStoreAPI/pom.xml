@@ -130,9 +130,6 @@
 			<artifactId>extentreports</artifactId>
 			<version>${extentreports-version}</version>
 		</dependency>
-
-
 	</dependencies>
-
 
 </project>    
