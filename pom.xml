@@ -20,6 +20,7 @@
 		<jackson-databind-version>2.20.0</jackson-databind-version>
 		<allure-testng-version>2.30.0</allure-testng-version>
 		<extentreports-version>5.1.2</extentreports-version>
+		<hamcrest-version>3.0</hamcrest-version>
 	</properties>
 
 
@@ -129,6 +130,15 @@
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>${extentreports-version}</version>
+		</dependency>
+
+		<!-- Hamcrest: Provides matchers like greaterThan(), equalTo(), etc. -->
+		<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest</artifactId>
+			<version>${hamcrest-version}</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 

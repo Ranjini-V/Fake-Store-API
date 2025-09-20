@@ -9,26 +9,19 @@ import io.restassured.RestAssured;
 import util.ConfigReader;
 
 public class BaseClass {
-	
-	ConfigReader configReader;
-	
+
+	ConfigReader configReader;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+	                                           
 
 	@BeforeClass
 	public void setUp() {
 		try {
 			configReader = new ConfigReader();
-		} catch(IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		RestAssured.baseURI = Endpoints.BASE_URL;
-			
-	
-	
-	
-	
-	
-	
-	
+
 	}
 
 }
