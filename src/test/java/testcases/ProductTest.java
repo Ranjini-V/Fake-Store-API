@@ -6,6 +6,9 @@ import endpoint.Endpoints;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
+
+import java.util.List;
+
 import io.restassured.response.Response;
 
 public class ProductTest extends BaseClass {
@@ -13,6 +16,7 @@ public class ProductTest extends BaseClass {
 	// test to retrieve all products
 	@Test
 	public void testGetAllProducts() {
+
 		given()
 				.when()
 				.get(Endpoints.GET_ALL_PRODUCTS)
@@ -37,21 +41,37 @@ public class ProductTest extends BaseClass {
 				.statusCode(200)
 				.log().body();
 	}
-	
-	
+
 	// test to retrieve a limited number of products
 	@Test
 	public void testGetLimitedProducts() {
-		
+
 		given()
-		.pathParam("limit", 4)
-		.when()
-		.get(Endpoints.GET_PRODUCTS_WIH_LIMIT)
-		.then()
-		.statusCode(200)
-		.log().body()
-		.body("size()", equalTo(4));
-		
+				.pathParam("limit", 4)
+				.when()
+				.get(Endpoints.GET_PRODUCTS_WIH_LIMIT)
+				.then()
+				.statusCode(200)
+				.log().body()
+				.body("size()", equalTo(4));
+
 	}
+
+	// test to retrieve products sorted in descending order
+	@Test
+	public void testGetSortedProducts() {
+
+		Response response = given()
+				.when()
+				.get(Endpoints.GET_PRODUCTS_SORTED)
+				.then()
+				.statusCode(200)
+				.extract().response();
+
+		List<Integer> productId = response.jsonPath().getList("id", Integer.class);
+		isSortedDescending(productId);
+	}
+
+
 
 }
