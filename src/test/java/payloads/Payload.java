@@ -6,13 +6,13 @@ import pojo.Products;
 
 public class Payload {
 
-	private final Faker faker = new Faker();
+	private final static Faker faker = new Faker();
 
 	private static final String categoriesArray[] = { "Electronics", "Pharma", "Clothing", "Footwear", "Skincare" };
-	Random randomInt = new Random();
+	static Random randomInt = new Random();
 
 	// Product Payload
-	public Products productPayload() {
+	public static Products productPayload() {
 		String name = faker.commerce().productName();
 		double price = Double.parseDouble(faker.commerce().price());
 		String description = faker.lorem().sentence();

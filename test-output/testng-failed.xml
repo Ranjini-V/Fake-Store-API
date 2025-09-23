@@ -5,7 +5,7 @@
     <classes>
       <class name="testcases.ProductTest">
         <methods>
-          <include name="testGetLimitedProducts"/>
+          <include name="testCreateProduct"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- testcases.ProductTest -->
