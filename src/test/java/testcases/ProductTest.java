@@ -160,4 +160,19 @@ public class ProductTest extends BaseClass {
 
 	}
 
+	// test to delete a product
+	@Test
+	public void testDeleteProduct() {
+
+		int productID = configReader.getIntProperty("productID");
+
+		given()
+				.pathParam("id", productID)
+				.when()
+				.delete(Endpoints.DELETE_PRODUCT)
+				.then()
+				.statusCode(200);
+
+	}
+
 }
