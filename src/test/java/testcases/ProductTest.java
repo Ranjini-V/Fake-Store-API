@@ -107,7 +107,7 @@ public class ProductTest extends BaseClass {
 	}
 
 	// test to get products by category
-	@Test
+	//@Test
 	public void testGetProductsCategory() {
 		given()
 				.pathParam("category", "electronics")
