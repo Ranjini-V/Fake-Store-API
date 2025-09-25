@@ -95,7 +95,7 @@ public class ProductTest extends BaseClass {
 
 	// test to get all products categories
 	@Test
-	public void getAllProductscategories() {
+	public void testGetAllProductscategories() {
 
 		given()
 				.when()
@@ -108,7 +108,7 @@ public class ProductTest extends BaseClass {
 
 	// test to get products by category
 	@Test
-	public void getProductsCategory() {
+	public void testGetProductsCategory() {
 		given()
 				.pathParam("category", "electronics")
 				.when()
@@ -139,6 +139,24 @@ public class ProductTest extends BaseClass {
 				.extract().response().jsonPath().getInt("id");
 
 		System.out.print("Product ID generated:" + productID);
+
+	}
+
+	// test to update an existing product
+	@Test
+	public void testUpdateProduct() {
+
+		int productID = configReader.getIntProperty("productID");
+		Products updatedPayload = Payload.productPayload();
+		given()
+				.contentType(ContentType.JSON).body(updatedPayload)
+				.pathParam("id", productID)
+				.when()
+				.put(Endpoints.UPDATE_PRODUCT)
+				.then()
+				.log().body()
+				.statusCode(200)
+				.body("title", equalTo(updatedPayload.getTitle()));
 
 	}
 
