@@ -9,75 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,020</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">46,903</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.ProductTest</td><td><a href="#m0">testGetProductsCategory</a></td><td rowspan="1">1758821357764</td><td rowspan="1">629</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">testcases.ProductTest</td><td><a href="#m1">testCreateProduct</a></td><td rowspan="1">1758821345967</td><td rowspan="1">8270</td></tr><tr class="passedeven"><td><a href="#m2">testDeleteProduct</a></td><td rowspan="1">1758821354472</td><td rowspan="1">935</td></tr><tr class="passedeven"><td><a href="#m3">testGetAllProducts</a></td><td rowspan="1">1758821355415</td><td rowspan="1">714</td></tr><tr class="passedeven"><td><a href="#m4">testGetAllProductscategories</a></td><td rowspan="1">1758821356135</td><td rowspan="1">686</td></tr><tr class="passedeven"><td><a href="#m5">testGetLimitedProducts</a></td><td rowspan="1">1758821356829</td><td rowspan="1">928</td></tr><tr class="passedeven"><td><a href="#m6">testGetSingleProduct</a></td><td rowspan="1">1758821358441</td><td rowspan="1">609</td></tr><tr class="passedeven"><td><a href="#m7">testGetSortedProductsAscending</a></td><td rowspan="1">1758821359065</td><td rowspan="1">704</td></tr><tr class="passedeven"><td><a href="#m8">testGetSortedProductsDescending</a></td><td rowspan="1">1758821359784</td><td rowspan="1">726</td></tr><tr class="passedeven"><td><a href="#m9">testUpdateProduct</a></td><td rowspan="1">1758821360521</td><td rowspan="1">697</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">testcases.ProductDataDrivenTest</td><td><a href="#m0">testAddNewProduct</a></td><td rowspan="10">1758989568578</td><td rowspan="10">1486</td></tr><tr class="passedeven"><td><a href="#m1">testAddNewProduct</a></td></tr><tr class="passedeven"><td><a href="#m2">testAddNewProduct</a></td></tr><tr class="passedeven"><td><a href="#m3">testAddNewProduct</a></td></tr><tr class="passedeven"><td><a href="#m4">testAddNewProduct</a></td></tr><tr class="passedeven"><td><a href="#m5">testAddNewProduct</a></td></tr><tr class="passedeven"><td><a href="#m6">testAddNewProduct</a></td></tr><tr class="passedeven"><td><a href="#m7">testAddNewProduct</a></td></tr><tr class="passedeven"><td><a href="#m8">testAddNewProduct</a></td></tr><tr class="passedeven"><td><a href="#m9">testAddNewProduct</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testcases.ProductTest#testGetProductsCategory</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parseText.call(Unknown Source)
-	at io.restassured.internal.ContentParser.parse(ContentParser.groovy:42)
-	at io.restassured.internal.ContentParser$parse.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:497)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
-	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-	at testcases.ProductTest.testGetProductsCategory(ProductTest.java:118)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.ProductTest#testCreateProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcases.ProductTest#testDeleteProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testcases.ProductTest#testGetAllProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testcases.ProductTest#testGetAllProductscategories</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testcases.ProductTest#testGetLimitedProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testcases.ProductTest#testGetSingleProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">testcases.ProductTest#testGetSortedProductsAscending</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">testcases.ProductTest#testGetSortedProductsDescending</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">testcases.ProductTest#testUpdateProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Running Shoes, price=74.99, description=Lightweight and breathable running shoes for optimal performance., image=https://example.com/images/running_shoes.jpg, category=Sports &amp; Outdoors}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Stainless Steel Water Bottle, price=22.99, description=Eco-friendly stainless steel water bottle that keeps drinks cold for 24 hours., image=https://example.com/images/stainless_steel_water_bottle.jpg, category=Sports &amp; Outdoors}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Vintage Leather Jacket, price=199.99, description=A stylish vintage leather jacket perfect for cold weather., image=https://example.com/images/vintage_leather_jacket.jpg, category=Apparel}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Wireless Bluetooth Headphones, price=89.99, description=High-quality wireless headphones with noise cancellation., image=https://example.com/images/bluetooth_headphones.jpg, category=Electronics}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Modern Wall Clock, price=59.99, description=Sleek and modern wall clock with a minimalist design., image=https://example.com/images/modern_wall_clock.jpg, category=Home &amp; Office}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Luxury Scented Candles, price=29.99, description=A set of luxury scented candles for a relaxing ambiance., image=https://example.com/images/luxury_scented_candles.jpg, category=Home &amp; Office}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Smart LED Desk Lamp, price=45.50, description=A smart LED desk lamp with adjustable brightness and color settings., image=https://example.com/images/smart_led_desk_lamp.jpg, category=Home &amp; Office}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Electric Toothbrush, price=35.00, description=Advanced electric toothbrush for a deep and thorough clean., image=https://example.com/images/electric_toothbrush.jpg, category=Health &amp; Beauty}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Portable Power Bank, price=25.99, description=Compact power bank for charging devices on the go., image=https://example.com/images/portable_power_bank.jpg, category=Electronics}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testcases.ProductDataDrivenTest#testAddNewProduct</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{title=Organic Green Tea, price=12.99, description=Premium organic green tea for a healthy lifestyle., image=https://example.com/images/organic_green_tea.jpg, category=Food &amp; Beverage}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -5,11 +5,14 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+import org.testng.annotations.DataProvider;
+
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class DataProvider {
+public class DataProviders {
 
+	@DataProvider
 	public Object[][] jsonDataProvider() throws IOException {
 
 		// Path to JSON file

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 25 22:59:05 IST 2025</td>
+<td>Started on:</td><td>Sat Sep 27 21:42:12 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16020 ms)</td>
+<tr><td>Total time:</td><td>46 seconds (46903 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,133 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testcases.ProductTest.testGetProductsCategory()'><b>testGetProductsCategory</b><br>Test class: testcases.ProductTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parseText.call(Unknown Source)
-	at io.restassured.internal.ContentParser.parse(ContentParser.groovy:42)
-	at io.restassured.internal.ContentParser$parse.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:497)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
-	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-	at testcases.ProductTest.testGetProductsCategory(ProductTest.java:118)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1842068297", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1842068297'><pre>java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parseText.call(Unknown Source)
-	at io.restassured.internal.ContentParser.parse(ContentParser.groovy:42)
-	at io.restassured.internal.ContentParser$parse.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:497)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
-	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
-	at testcases.ProductTest.testGetProductsCategory(ProductTest.java:118)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>testcases.ProductTest@6d5620ce</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -203,50 +76,55 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.ProductTest.testGetAllProductscategories()'><b>testGetAllProductscategories</b><br>Test class: testcases.ProductTest</td>
+<td title='testcases.ProductDataDrivenTest.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDrivenTest<br>Parameters: {title=Running Shoes, price=74.99, description=Lightweight and breathable running shoes for optimal performance., image=https://example.com/images/running_shoes.jpg, category=Sports & Outdoors}</td>
 <td></td>
-<td>0</td>
-<td>testcases.ProductTest@6d5620ce</td></tr>
+<td>1</td>
+<td>testcases.ProductDataDrivenTest@3f1d2e23</td></tr>
 <tr>
-<td title='testcases.ProductTest.testGetSortedProductsDescending()'><b>testGetSortedProductsDescending</b><br>Test class: testcases.ProductTest</td>
+<td title='testcases.ProductDataDrivenTest.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDrivenTest<br>Parameters: {title=Stainless Steel Water Bottle, price=22.99, description=Eco-friendly stainless steel water bottle that keeps drinks cold for 24 hours., image=https://example.com/images/stainless_steel_water_bottle.jpg, category=Sports & Outdoors}</td>
 <td></td>
-<td>0</td>
-<td>testcases.ProductTest@6d5620ce</td></tr>
+<td>1</td>
+<td>testcases.ProductDataDrivenTest@3f1d2e23</td></tr>
 <tr>
-<td title='testcases.ProductTest.testGetAllProducts()'><b>testGetAllProducts</b><br>Test class: testcases.ProductTest</td>
+<td title='testcases.ProductDataDrivenTest.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDrivenTest<br>Parameters: {title=Vintage Leather Jacket, price=199.99, description=A stylish vintage leather jacket perfect for cold weather., image=https://example.com/images/vintage_leather_jacket.jpg, category=Apparel}</td>
 <td></td>
-<td>0</td>
-<td>testcases.ProductTest@6d5620ce</td></tr>
+<td>28</td>
+<td>testcases.ProductDataDrivenTest@3f1d2e23</td></tr>
 <tr>
-<td title='testcases.ProductTest.testDeleteProduct()'><b>testDeleteProduct</b><br>Test class: testcases.ProductTest</td>
+<td title='testcases.ProductDataDrivenTest.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDrivenTest<br>Parameters: {title=Wireless Bluetooth Headphones, price=89.99, description=High-quality wireless headphones with noise cancellation., image=https://example.com/images/bluetooth_headphones.jpg, category=Electronics}</td>
 <td></td>
-<td>0</td>
-<td>testcases.ProductTest@6d5620ce</td></tr>
+<td>1</td>
+<td>testcases.ProductDataDrivenTest@3f1d2e23</td></tr>
 <tr>
-<td title='testcases.ProductTest.testUpdateProduct()'><b>testUpdateProduct</b><br>Test class: testcases.ProductTest</td>
+<td title='testcases.ProductDataDrivenTest.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDrivenTest<br>Parameters: {title=Modern Wall Clock, price=59.99, description=Sleek and modern wall clock with a minimalist design., image=https://example.com/images/modern_wall_clock.jpg, category=Home & Office}</td>
 <td></td>
-<td>0</td>
-<td>testcases.ProductTest@6d5620ce</td></tr>
+<td>1</td>
+<td>testcases.ProductDataDrivenTest@3f1d2e23</td></tr>
 <tr>
-<td title='testcases.ProductTest.testGetSortedProductsAscending()'><b>testGetSortedProductsAscending</b><br>Test class: testcases.ProductTest</td>
+<td title='testcases.ProductDataDrivenTest.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDrivenTest<br>Parameters: {title=Luxury Scented Candles, price=29.99, description=A set of luxury scented candles for a relaxing ambiance., image=https://example.com/images/luxury_scented_candles.jpg, category=Home & Office}</td>
 <td></td>
-<td>0</td>
-<td>testcases.ProductTest@6d5620ce</td></tr>
+<td>2</td>
+<td>testcases.ProductDataDrivenTest@3f1d2e23</td></tr>
 <tr>
-<td title='testcases.ProductTest.testGetLimitedProducts()'><b>testGetLimitedProducts</b><br>Test class: testcases.ProductTest</td>
+<td title='testcases.ProductDataDrivenTest.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDrivenTest<br>Parameters: {title=Smart LED Desk Lamp, price=45.50, description=A smart LED desk lamp with adjustable brightness and color settings., image=https://example.com/images/smart_led_desk_lamp.jpg, category=Home & Office}</td>
 <td></td>
-<td>0</td>
-<td>testcases.ProductTest@6d5620ce</td></tr>
+<td>1</td>
+<td>testcases.ProductDataDrivenTest@3f1d2e23</td></tr>
 <tr>
-<td title='testcases.ProductTest.testCreateProduct()'><b>testCreateProduct</b><br>Test class: testcases.ProductTest</td>
+<td title='testcases.ProductDataDrivenTest.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDrivenTest<br>Parameters: {title=Electric Toothbrush, price=35.00, description=Advanced electric toothbrush for a deep and thorough clean., image=https://example.com/images/electric_toothbrush.jpg, category=Health & Beauty}</td>
 <td></td>
-<td>8</td>
-<td>testcases.ProductTest@6d5620ce</td></tr>
+<td>1</td>
+<td>testcases.ProductDataDrivenTest@3f1d2e23</td></tr>
 <tr>
-<td title='testcases.ProductTest.testGetSingleProduct()'><b>testGetSingleProduct</b><br>Test class: testcases.ProductTest</td>
+<td title='testcases.ProductDataDrivenTest.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDrivenTest<br>Parameters: {title=Portable Power Bank, price=25.99, description=Compact power bank for charging devices on the go., image=https://example.com/images/portable_power_bank.jpg, category=Electronics}</td>
 <td></td>
-<td>0</td>
-<td>testcases.ProductTest@6d5620ce</td></tr>
+<td>1</td>
+<td>testcases.ProductDataDrivenTest@3f1d2e23</td></tr>
+<tr>
+<td title='testcases.ProductDataDrivenTest.testAddNewProduct()'><b>testAddNewProduct</b><br>Test class: testcases.ProductDataDrivenTest<br>Parameters: {title=Organic Green Tea, price=12.99, description=Premium organic green tea for a healthy lifestyle., image=https://example.com/images/organic_green_tea.jpg, category=Food & Beverage}</td>
+<td></td>
+<td>1</td>
+<td>testcases.ProductDataDrivenTest@3f1d2e23</td></tr>
 </table><p>
 </body>
 </html>
