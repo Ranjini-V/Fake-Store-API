@@ -140,6 +140,11 @@
 			<version>${hamcrest-version}</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>ranjini.v</groupId>
+			<artifactId>SeleniumFrameworkDesign</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 </project>    
