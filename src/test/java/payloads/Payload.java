@@ -3,6 +3,10 @@ package payloads;
 import java.util.Random;
 import com.github.javafaker.Faker;
 import pojo.Products;
+import pojo.Users;
+import pojo.Address;
+import pojo.GeoLocation;
+import pojo.Name;
 
 public class Payload {
 
@@ -22,6 +26,35 @@ public class Payload {
 		Products productsBody = new Products(name, price, description, image, category);
 
 		return productsBody;
+	}
+
+	// User Payload
+
+	public static Users usersPayload() {
+		
+		String email = faker.internet().emailAddress();
+		String username = faker.funnyName().name();
+		String password = faker.internet().password();
+		String phone = faker.phoneNumber().subscriberNumber(10);
+
+		String firstname = faker.name().firstName();
+		String lastname = faker.name().lastName();
+		Name name = new Name(firstname, lastname);
+
+		String lat = faker.address().latitude();
+		String longi = faker.address().longitude();
+		GeoLocation geolocation = new GeoLocation (lat, longi);
+
+		String city = faker.address().city();
+		String street = faker.address().streetName();
+		String number = faker.address().buildingNumber();
+		String zipcode = faker.address().zipCode();
+		Address address = new Address(city, street, number, zipcode, geolocation);
+		
+		Users usersPayloadBody = new Users(email, username, password, name, address, phone);
+		
+		return usersPayloadBody;
+
 	}
 
 }
