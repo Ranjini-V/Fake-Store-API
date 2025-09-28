@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "array",
+  "type": "object",
   "properties": {
     "id": {
       "type": "integer"
@@ -15,7 +15,7 @@
       "type": "string"
     },
     "name": {
-      "type": "array",
+      "type": "object",
       "properties": {
         "firstname": {
           "type": "string"
@@ -30,7 +30,7 @@
       ]
     },
     "address": {
-      "type": "array",
+      "type": "object",
       "properties": {
         "city": {
           "type": "string"
@@ -45,7 +45,7 @@
           "type": "string"
         },
         "geolocation": {
-          "type": "array",
+          "type": "object",
           "properties": {
             "lat": {
               "type": "string"
