@@ -1,169 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-28T14:16:26 IST" name="Fake Store API" finished-at="2025-09-28T14:16:54 IST" duration-ms="28168">
+  <suite started-at="2025-09-28T18:18:50 IST" name="Default suite" finished-at="2025-09-28T18:18:58 IST" duration-ms="7809">
     <groups>
     </groups>
-    <test started-at="2025-09-28T14:16:26 IST" name="Test" finished-at="2025-09-28T14:16:54 IST" duration-ms="28168">
-      <class name="testcases.ProductDataDrivenTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ProductDataDrivenTest@3576ddc2]" started-at="2025-09-28T14:16:27 IST" name="setUp" finished-at="2025-09-28T14:16:28 IST" duration-ms="745" status="PASS">
+    <test started-at="2025-09-28T18:18:50 IST" name="Default test" finished-at="2025-09-28T18:18:58 IST" duration-ms="7809">
+      <class name="testcases.UsersTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.UsersTest@4c5ae43b]" started-at="2025-09-28T18:18:50 IST" name="setUp" finished-at="2025-09-28T18:18:51 IST" duration-ms="803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@3576ddc2]" started-at="2025-09-28T14:16:28 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-09-28T14:16:35 IST" duration-ms="6536" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Vintage Leather Jacket, price=199.99, description=A stylish vintage leather jacket perfect for cold weather., image=https://example.com/images/vintage_leather_jacket.jpg, category=Apparel}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testGetAllUsers()[pri:0, instance:testcases.UsersTest@4c5ae43b]" started-at="2025-09-28T18:18:51 IST" name="testGetAllUsers" finished-at="2025-09-28T18:18:57 IST" duration-ms="6792" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@3576ddc2]" started-at="2025-09-28T14:16:35 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-09-28T14:16:37 IST" duration-ms="1502" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Wireless Bluetooth Headphones, price=89.99, description=High-quality wireless headphones with noise cancellation., image=https://example.com/images/bluetooth_headphones.jpg, category=Electronics}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@3576ddc2]" started-at="2025-09-28T14:16:37 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-09-28T14:16:38 IST" duration-ms="1400" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Organic Green Tea, price=12.99, description=Premium organic green tea for a healthy lifestyle., image=https://example.com/images/organic_green_tea.jpg, category=Food & Beverage}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@3576ddc2]" started-at="2025-09-28T14:16:38 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-09-28T14:16:39 IST" duration-ms="1296" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Smart LED Desk Lamp, price=45.50, description=A smart LED desk lamp with adjustable brightness and color settings., image=https://example.com/images/smart_led_desk_lamp.jpg, category=Home & Office}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@3576ddc2]" started-at="2025-09-28T14:16:39 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-09-28T14:16:41 IST" duration-ms="1551" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Running Shoes, price=74.99, description=Lightweight and breathable running shoes for optimal performance., image=https://example.com/images/running_shoes.jpg, category=Sports & Outdoors}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@3576ddc2]" started-at="2025-09-28T14:16:41 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-09-28T14:16:42 IST" duration-ms="1252" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Stainless Steel Water Bottle, price=22.99, description=Eco-friendly stainless steel water bottle that keeps drinks cold for 24 hours., image=https://example.com/images/stainless_steel_water_bottle.jpg, category=Sports & Outdoors}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@3576ddc2]" started-at="2025-09-28T14:16:42 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-09-28T14:16:44 IST" duration-ms="1401" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Electric Toothbrush, price=35.00, description=Advanced electric toothbrush for a deep and thorough clean., image=https://example.com/images/electric_toothbrush.jpg, category=Health & Beauty}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@3576ddc2]" started-at="2025-09-28T14:16:44 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-09-28T14:16:45 IST" duration-ms="1389" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Portable Power Bank, price=25.99, description=Compact power bank for charging devices on the go., image=https://example.com/images/portable_power_bank.jpg, category=Electronics}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@3576ddc2]" started-at="2025-09-28T14:16:45 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-09-28T14:16:46 IST" duration-ms="1233" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Modern Wall Clock, price=59.99, description=Sleek and modern wall clock with a minimalist design., image=https://example.com/images/modern_wall_clock.jpg, category=Home & Office}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-        <test-method signature="testAddNewProduct(java.util.Map)[pri:0, instance:testcases.ProductDataDrivenTest@3576ddc2]" started-at="2025-09-28T14:16:46 IST" name="testAddNewProduct" data-provider="jsonDataProvider" finished-at="2025-09-28T14:16:48 IST" duration-ms="1542" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{title=Luxury Scented Candles, price=29.99, description=A set of luxury scented candles for a relaxing ambiance., image=https://example.com/images/luxury_scented_candles.jpg, category=Home & Office}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewProduct -->
-      </class> <!-- testcases.ProductDataDrivenTest -->
-      <class name="testcases.ProductTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ProductTest@1169afe1]" started-at="2025-09-28T14:16:48 IST" name="setUp" finished-at="2025-09-28T14:16:48 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testCreateProduct()[pri:0, instance:testcases.ProductTest@1169afe1]" started-at="2025-09-28T14:16:48 IST" name="testCreateProduct" finished-at="2025-09-28T14:16:49 IST" duration-ms="1086" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateProduct -->
-        <test-method signature="testDeleteProduct()[pri:0, instance:testcases.ProductTest@1169afe1]" started-at="2025-09-28T14:16:49 IST" name="testDeleteProduct" finished-at="2025-09-28T14:16:50 IST" duration-ms="609" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeleteProduct -->
-        <test-method signature="testGetAllProducts()[pri:0, instance:testcases.ProductTest@1169afe1]" started-at="2025-09-28T14:16:50 IST" name="testGetAllProducts" finished-at="2025-09-28T14:16:50 IST" duration-ms="740" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetAllProducts -->
-        <test-method signature="testGetAllProductscategories()[pri:0, instance:testcases.ProductTest@1169afe1]" started-at="2025-09-28T14:16:50 IST" name="testGetAllProductscategories" finished-at="2025-09-28T14:16:51 IST" duration-ms="677" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetAllProductscategories -->
-        <test-method signature="testGetLimitedProducts()[pri:0, instance:testcases.ProductTest@1169afe1]" started-at="2025-09-28T14:16:51 IST" name="testGetLimitedProducts" finished-at="2025-09-28T14:16:52 IST" duration-ms="722" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetLimitedProducts -->
-        <test-method signature="testGetSingleProduct()[pri:0, instance:testcases.ProductTest@1169afe1]" started-at="2025-09-28T14:16:52 IST" name="testGetSingleProduct" finished-at="2025-09-28T14:16:52 IST" duration-ms="695" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetSingleProduct -->
-        <test-method signature="testGetSortedProductsAscending()[pri:0, instance:testcases.ProductTest@1169afe1]" started-at="2025-09-28T14:16:52 IST" name="testGetSortedProductsAscending" finished-at="2025-09-28T14:16:53 IST" duration-ms="746" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetSortedProductsAscending -->
-        <test-method signature="testGetSortedProductsDescending()[pri:0, instance:testcases.ProductTest@1169afe1]" started-at="2025-09-28T14:16:53 IST" name="testGetSortedProductsDescending" finished-at="2025-09-28T14:16:54 IST" duration-ms="630" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetSortedProductsDescending -->
-        <test-method signature="testUpdateProduct()[pri:0, instance:testcases.ProductTest@1169afe1]" started-at="2025-09-28T14:16:54 IST" name="testUpdateProduct" finished-at="2025-09-28T14:16:54 IST" duration-ms="607" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUpdateProduct -->
-      </class> <!-- testcases.ProductTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Fake Store API -->
+        </test-method> <!-- testGetAllUsers -->
+      </class> <!-- testcases.UsersTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
