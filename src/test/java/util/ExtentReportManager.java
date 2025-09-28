@@ -145,7 +145,8 @@ public class ExtentReportManager implements ITestListener {
     /**
      * Opens the generated Extent Report in the default web browser.
      */
-    private void openReport() {
+    @SuppressWarnings("unused")
+	private void openReport() {
         try {
             File reportFile = new File(System.getProperty("user.dir") + "\\reports\\" + reportName);
             Desktop.getDesktop().browse(reportFile.toURI());
