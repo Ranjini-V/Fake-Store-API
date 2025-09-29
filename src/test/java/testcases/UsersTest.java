@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import endpoint.Endpoints;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import payloads.Payload;
 import pojo.Products;
 import pojo.Users;
@@ -11,6 +12,8 @@ import pojo.Users;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+
+import java.util.List;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
@@ -68,6 +71,46 @@ public class UsersTest extends BaseClass {
 				.statusCode(201)
 				.body("id", notNullValue())
 				.extract().response().jsonPath().getInt("id");
+
+		System.out.print("User ID generated:" + userID);
+
 	}
 
+	// Get users in sorted order - ascending
+	@Test
+	public void testGetUsersInAscendingOrder() {
+
+		Response response = given()
+				.pathParam("order", "asc")
+				.when()
+				.get(Endpoints.GET_USERS_SORTED)
+				.then()
+				.statusCode(200)
+				.log().body()
+				.extract().response();
+
+		List<Integer> userIds = response.jsonPath().getList("id", Integer.class);
+
+		assertThat(isSortedAscending(userIds), is(true));
+
+	}
+
+	// Get users in sorted order - descending
+	@Test
+	public void testGetUsersIncDescendingOrder() {
+
+		Response response = given()
+				.pathParam("order", "desc")
+				.when()
+				.get(Endpoints.GET_USERS_SORTED)
+				.then()
+				.statusCode(200)
+				.log().body()
+				.extract().response();
+
+		List<Integer> userIds = response.jsonPath().getList("id", Integer.class);
+
+		assertThat(isSortedDescending(userIds), is(true));
+
+	}
 }
