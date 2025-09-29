@@ -97,7 +97,7 @@ public class UsersTest extends BaseClass {
 
 	// Get users in sorted order - descending
 	@Test
-	public void testGetUsersIncDescendingOrder() {
+	public void testGetUsersInDescendingOrder() {
 
 		Response response = given()
 				.pathParam("order", "desc")
@@ -111,6 +111,40 @@ public class UsersTest extends BaseClass {
 		List<Integer> userIds = response.jsonPath().getList("id", Integer.class);
 
 		assertThat(isSortedDescending(userIds), is(true));
+
+	}
+
+	// Update user
+	@Test
+	public void testUpdateUser() {
+
+		int userId = configReader.getIntProperty("userId");
+
+		Users updateUser = Payload.usersPayload();
+		given()
+				.pathParam("id", userId)
+				.contentType(ContentType.JSON)
+				.body(updateUser)
+				.when()
+				.put(Endpoints.UPDATE_USER)
+				.then()
+				.statusCode(200)
+				.log().body();
+
+	}
+
+	// Delete user
+	@Test
+	public void deleteUser() {
+
+		int userId = configReader.getIntProperty("userId");
+
+		given()
+				.pathParam("id", userId)
+				.when()
+				.delete(Endpoints.DELETE_USER)
+				.then()
+				.statusCode(200);
 
 	}
 }
