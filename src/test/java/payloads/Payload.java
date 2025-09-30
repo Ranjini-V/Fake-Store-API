@@ -1,10 +1,15 @@
 package payloads;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 import java.util.Random;
 import com.github.javafaker.Faker;
 import pojo.Products;
 import pojo.Users;
 import pojo.Address;
+import pojo.Cart;
+import pojo.CartProducts;
 import pojo.GeoLocation;
 import pojo.Name;
 
@@ -29,9 +34,8 @@ public class Payload {
 	}
 
 	// User Payload
-
 	public static Users usersPayload() {
-		
+
 		String email = faker.internet().emailAddress();
 		String username = faker.funnyName().name();
 		String password = faker.internet().password();
@@ -43,17 +47,35 @@ public class Payload {
 
 		String lat = faker.address().latitude();
 		String longi = faker.address().longitude();
-		GeoLocation geolocation = new GeoLocation (lat, longi);
+		GeoLocation geolocation = new GeoLocation(lat, longi);
 
 		String city = faker.address().city();
 		String street = faker.address().streetName();
 		String number = faker.address().buildingNumber();
 		String zipcode = faker.address().zipCode();
 		Address address = new Address(city, street, number, zipcode, geolocation);
-		
+
 		Users usersPayloadBody = new Users(email, username, password, name, address, phone);
-		
+
 		return usersPayloadBody;
+
+	}
+
+	// Cart Payload
+	public static Cart cartPayload(int userID) {
+
+		List<CartProducts> products = new ArrayList<>();
+
+		int productID = randomInt.nextInt(100);
+		int quantity = randomInt.nextInt(10) + 1;
+
+		CartProducts cartProducts = new CartProducts(productID, quantity);
+		products.add(cartProducts);
+
+		Date date = new Date();
+		Cart cart = new Cart(userID, date, products);
+
+		return cart;
 
 	}
 
